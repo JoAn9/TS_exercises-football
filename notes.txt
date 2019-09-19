@@ -1,0 +1,21 @@
+npm init -y
+tsc --init
+npm i nodemon concurrently
+(
+  in tsconfig.json:
+    "outDir": "./build",
+    "rootDir": "./src"
+)
+(
+  in package.json:
+  "scripts": {
+      "start:build": "tsc -w",
+      "start:run": "nodemon build/index.js",
+      "start": "concurrently npm:start:*"
+    },
+)
+
+npm start
+
+Tupple - we declare as:
+type TuppleName = [];
