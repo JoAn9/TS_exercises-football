@@ -19,3 +19,4 @@ npm start
 
 Tupple - we declare as:
 type TuppleName = [];
+type MatchData = [Date, string, number, MatchResults];

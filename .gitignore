@@ -4,5 +4,4 @@ node_modules
 yarn-error.log
 .history/**
 package-lock.json
-.cache
-dist
+build
